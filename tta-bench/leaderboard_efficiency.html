@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELM - Text-to-Image Models Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leaderboard.css">
+    <script src="nav.js"></script>
+    <style>
+        .no-wrap {
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+            font-size: min(6vw, 48px);
+        }
+
+        .nowrap-blue {
+            color: blue;
+            white-space: nowrap;
+        }
+
+        #accuracy-text {
+            color: #eb5d50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1 class="no-wrap">
+            Text-to-Audio Models <strong id="accuracy-text">Efficiency</strong> Leaderboard
+        </h1>
+
+        <div class="leaderboard-container">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>MelRTF</th>
+                        <th>E2E_RTF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AudioGen</td>
+                        <td>-</td>
+                        <td>2.1924</td>
+                    </tr>
+                    <tr>
+                        <td>AudioLDM</td>
+                        <td>1.5393</td>
+                        <td>1.5441</td>
+                    </tr>
+                    <tr>
+                        <td>AudioLDM 2</td>
+                        <td>2.9864</td>
+                        <td>2.9883</td>
+                    </tr>
+                    <tr>
+                        <td>Auffusion</td>
+                        <td>1.4323</td>
+                        <td>1.4452</td>
+                    </tr>
+                    <tr>
+                        <td>MAGNeT</td>
+                        <td>-</td>
+                        <td>0.2517</td>
+                    </tr>
+                    <tr>
+                        <td>Make-An-Audio</td>
+                        <td>0.4499</td>
+                        <td>0.4568</td>
+                    </tr>
+                    <tr>
+                        <td>Make-An-Audio2</td>
+                        <td>0.2098</td>
+                        <td>0.2163</td>
+                    </tr>
+                    <tr>
+                        <td>Stable-Audio</td>
+                        <td>-</td>
+                        <td>1.1652</td>
+                    </tr>
+                    <tr>
+                        <td>AudioLDM 2</td>
+                        <td>1.7732</td>
+                        <td>1.7794</td>
+                    </tr>
+                    <tr>
+                        <td>Tango</td>
+                        <td>1.7725</td>
+                        <td>1.7787</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-info">
+            <p>For diffusion-based models, a step number of 200 is used, which is a reasonable trade-off between speed
+                and performance.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

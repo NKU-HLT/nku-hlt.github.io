@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELM - Text-to-Image Models Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="model.css">
+    <script src="nav.js"></script>
+    <style>
+        .no-wrap {
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+            font-size: min(6vw, 48px);
+        }
+
+        .nowrap-blue {
+            color: blue;
+            white-space: nowrap;
+        }
+
+        #accuracy-text {
+            color: #eb5d50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1 class="no-wrap">
+            Text-to-Audio Models <strong id="accuracy-text">Information</strong>
+        </h1>
+
+        <div class="leaderboard-container">
+            <table class="leaderboard-table" style="font-size:1.1em;">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Model</th>
+                        <th colspan="2">Basic Info</th>
+                        <th colspan="3">Model Configuration</th>
+                        <th colspan="2">Training Data</th>
+                    </tr>
+                    <tr>
+                        <th>Org.</th>
+                        <th>License</th>
+                        <th>Var.</th>
+                        <th>Params</th>
+                        <th>Arch.</th>
+                        <th>Source</th>
+                        <th>Dur.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AudioGen </td>
+                        <td>Meta</td>
+                        <td>CBN4</td>
+                        <td>med</td>
+                        <td>1.5B</td>
+                        <td>AR</td>
+                        <td>AS, AC + 8 oth.</td>
+                        <td>6824</td>
+                    </tr>
+                    <tr>
+                        <td>AudioLDM </td>
+                        <td>Surrey</td>
+                        <td>CBNS4</td>
+                        <td>full</td>
+                        <td>739M</td>
+                        <td>LDM</td>
+                        <td>AS, AC + 2 oth.</td>
+                        <td>9031</td>
+                    </tr>
+                    <tr>
+                        <td>AudioLDM 2 </td>
+                        <td>Surrey</td>
+                        <td>CBNS4</td>
+                        <td>large</td>
+                        <td>712M</td>
+                        <td>LDM</td>
+                        <td>AC, AS + 3 oth.</td>
+                        <td>29510</td>
+                    </tr>
+                    <tr>
+                        <td>Auffusion</td>
+                        <td>BUPT</td>
+                        <td>CBNS4</td>
+                        <td>full</td>
+                        <td>1.1B</td>
+                        <td>LDM</td>
+                        <td>AC, AS + 9 oth.</td>
+                        <td>1990</td>
+                    </tr>
+                    <tr>
+                        <td>MAGNeT</td>
+                        <td>Meta</td>
+                        <td>CBN4</td>
+                        <td>med</td>
+                        <td>1.5B</td>
+                        <td>NAR</td>
+                        <td>licensed data</td>
+                        <td>16000</td>
+                    </tr>
+                    <tr>
+                        <td>Make-An-Audio </td>
+                        <td>ZJU</td>
+                        <td>MIT</td>
+                        <td>—</td>
+                        <td>453M</td>
+                        <td>LDM</td>
+                        <td>AS, AC + 13 oth.</td>
+                        <td>~3k</td>
+                    </tr>
+                    <tr>
+                        <td>Make-An-Audio 2</td>
+                        <td>ZJU</td>
+                        <td>MIT</td>
+                        <td>—</td>
+                        <td>937M</td>
+                        <td>LDM</td>
+                        <td>AS, AC + 10 oth.</td>
+                        <td>3700</td>
+                    </tr>
+                    <tr>
+                        <td>Stable-Audio Open</td>
+                        <td>Stability AI</td>
+                        <td>Comm.</td>
+                        <td>1.0</td>
+                        <td>1057M</td>
+                        <td>DiT</td>
+                        <td>FS, FMA</td>
+                        <td>7300</td>
+                    </tr>
+                    <tr>
+                        <td>Tango </a></td>
+                        <td>DeClaRe</td>
+                        <td>CBNS4</td>
+                        <td>full</td>
+                        <td>866M</td>
+                        <td>LDM</td>
+                        <td>AS, AC + 7 oth.</td>
+                        <td>1.2M</td>
+                    </tr>
+                    <tr>
+                        <td>Tango 2 </a></td>
+                        <td>DeClaRe</td>
+                        <td>CBNS4</td>
+                        <td>full</td>
+                        <td>866M</td>
+                        <td>LDM</td>
+                        <td>AL</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
